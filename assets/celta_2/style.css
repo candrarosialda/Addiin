@@ -1,0 +1,664 @@
+/*................................reset...........................................*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header1, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*................................clearfix...........................................*/
+.clearfix:after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+}
+.clearfix {
+	display: inline-block;
+}
+/* start commented backslash hack \*/
+* html .clearfix {
+	height: 1%;
+}
+.clearfix {
+	display: block;
+}
+/*.........GLOBLE......*/
+/*font-family: 'Roboto Slab', serif;*/
+body {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 16px;
+	line-height: 26px;
+	color: #212121;
+	font-weight: 400;
+}
+header1 {
+	position: absolute;
+	left: 0;
+	right: 0;
+	z-index: 9998;
+	width: 100%;
+	padding: 20px 0;
+	-webkit-transition: all 0.4s ease;
+	transition: all 0.4s ease;
+}
+header1.sticky {
+	position: fixed;
+	width: 100%;
+	background: #030375;
+	padding: 10px 0;
+	box-shadow: 3px 1px 0.99px 0.01px rgba(0, 0, 0, 0.05);
+}
+header1+ a.logo img {
+	display: block;
+}
+.logo {
+	width: 30%;
+	float: left;
+}
+nav1 {
+	width: 70% !important;
+	float: left !important;
+	text-align: center;
+	padding-top: 20px;
+}
+nav1 ul li {
+	display: inline-block;
+	padding: 0px 30px;
+}
+nav1 ul li a {
+	font-size: 11px;
+	text-transform: uppercase;
+	font-weight: 700;
+	letter-spacing: 2px;
+	display: block;
+	color: #fff;
+}
+nav1 ul li a:hover {
+	color: #ed1c24;
+	transition: all 0.5s;
+}
+#banner {
+	background: url(images/banner.jpg) no-repeat bottom center;
+	background-size: cover;
+	padding: 146px 0 110px;
+	text-align: center;
+	position: relative;
+	z-index: 100;
+}
+#banner h1 {
+	font-size: 50px;
+	margin-top: 30px;
+	line-height: 100%;
+	color: #fff;
+	font-weight: 300;
+	letter-spacing: 20px;
+	font-family: 'Roboto Slab', serif;
+}
+#banner h1 span {
+	font-weight: 700;
+	font-family: 'Montserrat', sans-serif;
+}
+#banner p {
+	color: #fff;
+	font-family: 'Roboto Slab', serif;
+	font-weight: 300;
+	padding-bottom: 55px;
+	padding-top: 35px;
+}
+#banner a {
+	max-width: 255px;
+	width: 100%;
+	height: 46px;
+	line-height: 46px;
+	border: 1px solid #fff;
+	display: inline-block;
+	border-radius: 10px;
+	margin: 0 15px;
+	color: #fff;
+	font-family: 'Roboto Slab', serif;
+	letter-spacing: 1px;
+}
+a.youtube {
+	background: url(images/youtube.png) no-repeat 15px center;
+	width: 33px;
+	height: 33px;
+}
+a.learn {
+	background: url(images/cap.png) no-repeat 15px center;
+	width: 32px;
+	height: 23px;
+}
+#video {
+	text-align: center;
+	padding: 80px 0 40px;
+	background: rgba(216,216,215,1);
+	background: -moz-linear-gradient(left, rgba(216,216,215,1) 0%, rgba(255,255,255,0.69) 51%, rgba(255,255,255,0.69) 51%, rgba(255,255,255,0.57) 71%, rgba(255,255,255,0.4) 100%);
+	background: -webkit-gradient(left top, right top, color-stop(0%, rgba(216,216,215,1)), color-stop(51%, rgba(255,255,255,0.69)), color-stop(51%, rgba(255,255,255,0.69)), color-stop(71%, rgba(255,255,255,0.57)), color-stop(100%, rgba(255,255,255,0.4)));
+	background: -webkit-linear-gradient(left, rgba(216,216,215,1) 0%, rgba(255,255,255,0.69) 51%, rgba(255,255,255,0.69) 51%, rgba(255,255,255,0.57) 71%, rgba(255,255,255,0.4) 100%);
+	background: -o-linear-gradient(left, rgba(216,216,215,1) 0%, rgba(255,255,255,0.69) 51%, rgba(255,255,255,0.69) 51%, rgba(255,255,255,0.57) 71%, rgba(255,255,255,0.4) 100%);
+	background: -ms-linear-gradient(left, rgba(216,216,215,1) 0%, rgba(255,255,255,0.69) 51%, rgba(255,255,255,0.69) 51%, rgba(255,255,255,0.57) 71%, rgba(255,255,255,0.4) 100%);
+	background: linear-gradient(to right, rgba(216,216,215,1) 0%, rgba(255,255,255,0.69) 51%, rgba(255,255,255,0.69) 51%, rgba(255,255,255,0.57) 71%, rgba(255,255,255,0.4) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d8d8d7', endColorstr='#ffffff', GradientType=1 );
+}
+#video h2 {
+	font-size: 50px;
+	line-height: 60px;
+	color: #212121;
+}
+#video h2 span {
+	color: #ed1c24;
+}
+span.line {
+	width: 160px;
+	height: 4px;
+	background: #ed1c24;
+	display: block;
+	margin: 30px auto 50px;
+}
+#videoimage {
+	background: url(images/videoback.png) no-repeat center center;
+	display: block;
+	width: 100%;
+	min-height: 544px;
+	text-align: center;
+}
+#videoimage iframe {
+	width: 100%;
+	height: 544px;
+	float: left;
+	display: block;
+}
+.imagecoloroverlay a {
+	display: block;
+	cursor: pointer;
+	margin: 260px auto 0;
+}
+.imagecoloroverlay a i {
+	color: rgba(255,255,255,0.50);
+	font-size: 150px;
+}
+.camera {
+	padding: 80px 0;
+	background: url(images/camera.jpg) no-repeat right 100px;
+	width: 100%;
+	min-height: 533px;
+}
+.camera h2, .fetures h2 {
+	text-align: center;
+	font-size: 50px;
+	font-weight: 700;
+	color: #ed1c24;
+}
+.camera h2 span, .fetures h2 span {
+	color: #212121;
+}
+.camera p.top, .fetures p.top {
+	text-align: center;
+	padding: 25px 0;
+}
+.camera img {
+	position: relative;
+	top: 8px;
+}
+.camera h3 {
+	font-family: 'Roboto Slab', serif;
+	font-weight: 700;
+	font-size: 30px;
+	letter-spacing: 0.5px;
+	margin-bottom: 35px;
+}
+.subscriber {
+	background: url(images/subscriberbanner.jpg) no-repeat center center;
+	padding: 30px 0 60px;
+	background-size: cover;
+	text-align: center;
+}
+.subscriber p {
+	color: #fff;
+}
+.subscriber h2 {
+	font-size: 50px;
+	color: #fff;
+	font-weight: 700;
+	margin: 37px 0 10px;
+	line-height: 100%;
+}
+.subscriber h2 span {
+	color: #ed1c24;
+}
+.subscriber p {
+	padding-bottom: 55px;
+}
+.subscriber form {
+	max-width: 540px;
+	width: 100%;
+	margin: 0 auto;
+}
+.subscriber form input {
+	width: 60%;
+	border: 1px solid #fff;
+	background: none;
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+	padding: 10px;
+	outline: 0;
+	color: #fff;
+}
+.subscriber form button {
+	width: 40%;
+	border: 1px solid #fff;
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+	padding: 9px 10px 11px;
+	background: url(images/watch.png) no-repeat 15px center;
+	color: #fff;
+	font-family: 'Roboto Slab', serif;
+	font-weight: 300;
+}
+#clients {
+	padding: 90px 0 65px;
+	text-align: center;
+	background: #ebebeb;
+}
+#clients h2 {
+	font-weight: 700;
+	font-size: 50px;
+	color: #212121;
+	line-height: 100%;
+	margin-bottom: 50px;
+}
+#testimonials {
+	padding: 100px 0 25px;
+	background: #fff;
+}
+img.test {
+	width: 300px;
+	display: block;
+	margin: 0 auto;
+}
+#testimonials p {
+	font-family: 'Roboto Slab', serif;
+	margin-bottom: 20px;
+	color: #212121;
+	font-size: 18px;
+}
+#testimonials span {
+	font-size: 14px;
+	color: #7e7e7e;
+	display: block;
+	margin-bottom: 70px;
+}
+#testimonials h3 {
+	font-size: 14px;
+	font-weight: 700;
+	color: #212121;
+	line-height: 15px;
+}
+.fetures {
+	padding: 85px 0 45px;
+	background: #f8f8f8;
+}
+.fetures h3 {
+	font-family: 'Roboto Slab', serif;
+	font-size: 30px;
+	color: #212121;
+	font-weight: 700;
+	margin-bottom: 35px;
+}
+.fetures p {
+	font-size: 16px;
+	color: #212121;
+	margin-bottom: 55px;
+}
+.pricing {
+	padding: 90px 0;
+	text-align: center;
+}
+.pricing h2 {
+	text-align: center;
+	font-size: 50px;
+	font-weight: 700;
+	color: #212121;
+}
+.pricing h2 span {
+	color: #ed1c24;
+}
+.pricing p.top {
+	text-align: center;
+	padding: 25px 0;
+}
+.pricing article h3 {
+	font-size: 72px;
+	font-weight: 700;
+	color: #030375;
+	padding: 60px 0 10px;
+	line-height: 100%;
+}
+.pricing article h3 span {
+	font-size: 40px;
+	font-weight: 400;
+	position: relative;
+	top: 20px;
+}
+.pricing article span.line {
+	height: 1px;
+	margin: 25px auto 25px;
+}
+.pricing article h4 {
+	width: 96px;
+	height: 34px;
+	line-height: 34px;
+	border-radius: 10px;
+	font-size: 14px;
+	color: #212121;
+	margin: 0 auto 35px;
+	border: 1px solid #ececec;
+}
+.pricing article p {
+	font-size: 18px;
+	color: #212121;
+	margin-bottom: 10px;
+}
+.pricing article a {
+	max-width: 255px;
+	width: 100%;
+	height: 46px;
+	line-height: 46px;
+	border-radius: 10px;
+	color: #fff;
+	border: 1px solid #030375;
+	background: #030375;
+	font-size: 18px;
+	text-transform: uppercase;
+	display: block;
+	margin: 25px auto 0px;
+}
+.pricing article {
+	max-width: 285px;
+	width: 100%;
+	border: 1px solid rgba(0,0,0,0.00);
+	margin: 0 auto 20px;
+	padding-bottom: 35px;
+	border-radius: 10px;
+}
+.pricing article:hover {
+	box-shadow: 0px 8px 16px 0px rgba(0, 1, 1, 0.35);
+	border: 1px solid #ececec;
+}
+.pricing article:hover a {
+	background: #fff;
+	color: #030375;
+}
+#contact1 {
+	background: url(images/contactbanner.jpg) no-repeat center center;
+	padding: 70px 0 90px;
+	text-align: center;
+	background-size: cover;
+}
+#contact1 h2 {
+	margin-bottom: 60px;
+	font-weight: 700;
+	font-size: 50px;
+	color: #fff;
+	margin-top: 30px;
+}
+#contact1 h2 span {
+	color: #ed1c24;
+}
+#contact1 input, #contact1 textarea {
+	max-width: 350px;
+	width: 100%;
+	margin: 0 auto 13px;
+	display: block;
+	background: none;
+	border: 1px solid #fff;
+	border-radius: 10px;
+	padding: 10px;
+	outline: 0;
+	color: #fff;
+}
+#contact1 textarea {
+	height: 140px;
+}
+#contact1 a {
+	width: 220px;
+	height: 46px;
+	line-height: 46px;
+	border: 1px solid #fff;
+	border-radius: 10px;
+	background: url(images/send.png) no-repeat 20px center;
+	display: block;
+	margin: 30px auto 0;
+	color: #fff;
+}
+footer {
+	text-align: center;
+	padding: 55px 0;
+}
+footer p, footer p a {
+	font-family: 'Roboto Slab', serif;
+	font-size: 14px;
+	color: #212121;
+}
+footer p a:hover {
+	color: #ed1c24;
+}
+
+
+/* New */
+
+.os-animation {
+	opacity: 0;
+}
+.os-animation.animated {
+	opacity: 1;
+}
+.staggered-animation {
+	opacity: 0;
+}
+.staggered-animation.animated {
+	opacity: 1;
+}
+/*LOADER EFFECT*/
+/*Paste this css to your style sheet file or under head tag*/
+/* This only works with JavaScript, 
+if it's not present, don't show loader */
+.no-js #loader { display: none;  }
+.js #loader { display: block; position: absolute; left: 100px; top: 0; }
+.se-pre-con {
+ position: fixed;
+ left: 0px;
+ top: 0px;
+ width: 100%;
+ height: 100%;
+ z-index: 9999;
+ background: #030375;
+}
+
+
+
+.cssload-container {
+	position: relative;
+	z-index: 4;
+	margin: 0 auto;
+	left: 34px;
+	right: 29px;
+	margin-top: -44px;
+	width: 166px;
+	height: 78px;
+	list-style: none;
+	border: 2px solid rgba(255,255,255,0.4);
+	border-radius: 39px;
+	top:50%;
+}
+
+
+.cssload-loader{
+	position: absolute;
+	z-index: 3;
+	margin: 0 auto;
+	left: 0;
+	right: 0;
+	top: 50%;
+	margin-top: -29px;
+	width: 97px;
+	height: 58px;
+	list-style: none;
+}
+
+ul.cssload-loader li{
+	background-color: rgb(237,28,35);
+	width: 10px;
+	height: 10px;
+	float: right;
+	margin-right: 5px !important;
+	box-shadow: 0px 19px 10px rgba(237,28,35,0.2);
+		-o-box-shadow: 0px 19px 10px rgba(237,28,35,0.2);
+		-ms-box-shadow: 0px 19px 10px rgba(237,28,35,0.2);
+		-webkit-box-shadow: 0px 19px 10px rgba(237,28,35,0.2);
+		-moz-box-shadow: 0px 19px 10px rgba(237,28,35,0.2);
+}
+.cssload-loader li:first-child{
+	animation: cssload-loadbars 1.15s cubic-bezier(0.645,0.045,0.355,1) infinite 0s;
+		-o-animation: cssload-loadbars 1.15s cubic-bezier(0.645,0.045,0.355,1) infinite 0s;
+		-ms-animation: cssload-loadbars 1.15s cubic-bezier(0.645,0.045,0.355,1) infinite 0s;
+		-webkit-animation: cssload-loadbars 1.15s cubic-bezier(0.645,0.045,0.355,1) infinite 0s;
+		-moz-animation: cssload-loadbars 1.15s cubic-bezier(0.645,0.045,0.355,1) infinite 0s;
+}
+.cssload-loader li:nth-child(2){
+	animation: cssload-loadbars 1.15s ease-in-out infinite -0.23s;
+		-o-animation: cssload-loadbars 1.15s ease-in-out infinite -0.23s;
+		-ms-animation: cssload-loadbars 1.15s ease-in-out infinite -0.23s;
+		-webkit-animation: cssload-loadbars 1.15s ease-in-out infinite -0.23s;
+		-moz-animation: cssload-loadbars 1.15s ease-in-out infinite -0.23s;
+}
+.cssload-loader li:nth-child(3){
+	animation: cssload-loadbars 1.15s ease-in-out infinite -0.46s;
+		-o-animation: cssload-loadbars 1.15s ease-in-out infinite -0.46s;
+		-ms-animation: cssload-loadbars 1.15s ease-in-out infinite -0.46s;
+		-webkit-animation: cssload-loadbars 1.15s ease-in-out infinite -0.46s;
+		-moz-animation: cssload-loadbars 1.15s ease-in-out infinite -0.46s;
+}
+.cssload-loader li:nth-child(4){
+	animation: cssload-loadbars 1.15s ease-in-out infinite -0.69s;
+		-o-animation: cssload-loadbars 1.15s ease-in-out infinite -0.69s;
+		-ms-animation: cssload-loadbars 1.15s ease-in-out infinite -0.69s;
+		-webkit-animation: cssload-loadbars 1.15s ease-in-out infinite -0.69s;
+		-moz-animation: cssload-loadbars 1.15s ease-in-out infinite -0.69s;
+}
+.cssload-loader li:nth-child(5){
+	animation: cssload-loadbars 1.15s ease-in-out infinite -0.92s;
+		-o-animation: cssload-loadbars 1.15s ease-in-out infinite -0.92s;
+		-ms-animation: cssload-loadbars 1.15s ease-in-out infinite -0.92s;
+		-webkit-animation: cssload-loadbars 1.15s ease-in-out infinite -0.92s;
+		-moz-animation: cssload-loadbars 1.15s ease-in-out infinite -0.92s;
+}
+.cssload-loader li:nth-child(6){
+	animation: cssload-loadbars 1.15s ease-in-out infinite -1.15s;
+		-o-animation: cssload-loadbars 1.15s ease-in-out infinite -1.15s;
+		-ms-animation: cssload-loadbars 1.15s ease-in-out infinite -1.15s;
+		-webkit-animation: cssload-loadbars 1.15s ease-in-out infinite -1.15s;
+		-moz-animation: cssload-loadbars 1.15s ease-in-out infinite -1.15s;
+}
+
+
+
+@keyframes cssload-loadbars {
+	0%{
+		height: 10px;
+		margin-top: 24px;
+	}
+	50%{
+		height:49px;
+		margin-top: 0px;
+	}
+	100%{
+		height: 10px;
+		margin-top: 24px;
+	}
+}
+
+@-o-keyframes cssload-loadbars {
+	0%{
+		height: 10px;
+		margin-top: 24px;
+	}
+	50%{
+		height:49px;
+		margin-top: 0px;
+	}
+	100%{
+		height: 10px;
+		margin-top: 24px;
+	}
+}
+
+@-ms-keyframes cssload-loadbars {
+	0%{
+		height: 10px;
+		margin-top: 24px;
+	}
+	50%{
+		height:49px;
+		margin-top: 0px;
+	}
+	100%{
+		height: 10px;
+		margin-top: 24px;
+	}
+}
+
+@-webkit-keyframes cssload-loadbars {
+	0%{
+		height: 10px;
+		margin-top: 24px;
+	}
+	50%{
+		height:49px;
+		margin-top: 0px;
+	}
+	100%{
+		height: 10px;
+		margin-top: 24px;
+	}
+}
+
+@-moz-keyframes cssload-loadbars {
+	0%{
+		height: 10px;
+		margin-top: 24px;
+	}
+	50%{
+		height:49px;
+		margin-top: 0px;
+	}
+	100%{
+		height: 10px;
+		margin-top: 24px;
+	}
+}
